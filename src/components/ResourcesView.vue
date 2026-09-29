@@ -1,9 +1,12 @@
 <script setup>
+import progressiveWebAppsImage from "../assets/undraw_progressive-web-app_c4uq.svg";
+
 const resources = [
     {
         title: "Web Development",
         description: "Start building websites by learning the core technologies used on the web.",
-        tools: ["HTML", "CSS", "JavaScript"]
+        tools: ["HTML", "CSS", "JavaScript"],
+        image: progressiveWebAppsImage
     },
     {
         title: "Programming",
@@ -38,6 +41,12 @@ const resources = [
                     :key="resource.title"
                     class="resource-card"
                 >
+                    <img
+                        v-if="resource.image"
+                        :src="resource.image"
+                        alt="Illustration representing a progressive web app"
+                        class="resource-image"
+                    >
                     <h3>{{ resource.title }}</h3>
                     <p>{{ resource.description }}</p>
                     <ul>

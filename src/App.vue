@@ -112,6 +112,6 @@ function handleSubmission(formData) {
             </section>
         </main>
 
-        <AppFooter />
+        <AppFooter @navigate="changeView" />
     </div>
 </template>

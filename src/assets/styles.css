@@ -50,6 +50,16 @@ main {
     text-align: center;
 }
 
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo a:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 4px;
+}
+
 .site-header ul {
     list-style: none;
     margin: 0;
@@ -142,6 +152,25 @@ main {
     text-align: center;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+.about-content img {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+}
+
+.about-content p {
+    flex: 1;
+    margin: 0;
+}
+
 .about p,
 .section-description {
     max-width: 750px;
@@ -200,6 +229,14 @@ main {
 
 .resource-card ul {
     padding-left: 1.2rem;
+}
+
+.resource-image {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
 
 .table-container {
@@ -482,6 +519,26 @@ textarea:focus {
     margin: 0.25rem 0;
 }
 
+.site-footer address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
+    margin-top: 0.75rem;
+    font-style: normal;
+}
+
+.site-footer address a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer address a:hover,
+.site-footer address a:focus-visible {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
 .site-footer nav {
     display: flex;
     flex-wrap: wrap;
@@ -546,6 +603,11 @@ textarea:focus {
 
     .community-info-content {
         flex-direction: row;
+    }
+
+    .about-content {
+        flex-direction: row;
+        text-align: left;
     }
 
     .community-info-content > div {

@@ -19,7 +19,9 @@ const links = [
 <template>
     <header class="site-header">
         <div class="container header-content">
-            <h1 class="logo">DevHub</h1>
+            <h1 class="logo">
+                <a href="#home" @click.prevent="emit('navigate', 'home')">DevHub</a>
+            </h1>
 
             <nav aria-label="Main navigation">
                 <ul>
