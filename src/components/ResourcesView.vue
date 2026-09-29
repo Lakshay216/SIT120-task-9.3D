@@ -1,5 +1,7 @@
 <script setup>
 import progressiveWebAppsImage from "../assets/undraw_progressive-web-app_c4uq.svg";
+import codeSampleImage from "../assets/undraw_code-sample_kpju.svg";
+import secureServerImage from "../assets/undraw_secure-server_lz9x.svg";
 
 const resources = [
     {
@@ -11,12 +13,14 @@ const resources = [
     {
         title: "Programming",
         description: "Develop problem-solving skills and learn how to create programs using popular programming languages.",
-        tools: ["Python", "C++", "JavaScript"]
+        tools: ["Python", "C++", "JavaScript"],
+        image: codeSampleImage
     },
     {
         title: "Cloud & DevOps",
         description: "Learn about tools used to manage, deploy and maintain modern software applications.",
-        tools: ["Git", "Docker", "Kubernetes"]
+        tools: ["Git", "Docker", "Kubernetes"],
+        image: secureServerImage
     }
 ];
 </script>
